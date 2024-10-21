@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+
+
+    <body>
+        <div id="app"></div>
+        
+        <script type="text/babel" src="movieposter.jsx">
+        </script>
+        <script type="text/babel" src="movieRewards.jsx">
+        </script>
+        <script type="text/babel" src="movie.jsx">
+        </script>
+        <script type="text/babel">
+        const propsValues = {
+        title: "Favorite Movie",
+        movie: {
+        name: "Homeland",
+        img: "/img/homeland.jpg",
+        years: "2011-2020",
+        seasons: "1-8",
+        studio: "Showtime",
+        directors:"Howard Gordon and Alex Gansa",
+     rewards: ["American Cinema Editors Awards", "American Film Institute Awards", "Critics' Choice Television Awards", "Directors Guild of America Awards", "and others"
+        ]},
+        
+        };
+        ReactDOM.createRoot(document.getElementById("app")
+        )
+        .render(
+        <React.StrictMode>
+            <Movie data={propsValues} />
+        </React.StrictMode>
+        );
+        </script>
+    </body>
+
+</html>

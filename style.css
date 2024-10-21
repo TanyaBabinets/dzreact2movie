@@ -1,0 +1,55 @@
+body {
+background-image: url('/img/kino1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info {
+    width: 80vw;
+    max-width: 800px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: rgba(230, 217, 192, 0.5);
+    border-radius: 10px;
+    position: center;
+    text-align: left;
+    padding: 20px;
+   
+}
+
+#data {
+    flex: 1 1 50%;
+    padding: 10px;
+    height: auto;
+   
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+
+#poster {
+    margin-right: 20px;
+    flex: 1 1 50%;
+}
+
+#poster img {
+    width: 100%;
+    height: auto;
+
+}
